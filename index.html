@@ -314,16 +314,10 @@
       
         
           
-            <h3 id="netbeans的安装"><a href="#netbeans的安装" class="headerlink" title="netbeans的安装"></a>netbeans的安装</h3><blockquote>
-<p>一路默认即可，但不要一同安装glassfish服务器，将glassfish服务器单独放在C盘根目录下，（PS：netbeans最好不要安装在C盘，我的安装位置：D:\Downloads\netbeans）<br><img src="/2018/09/03/Java-ee/./NetBeans.jpg" alt="netbeans"></p>
-</blockquote>
-<h3 id="MySQL的安装"><a href="#MySQL的安装" class="headerlink" title="MySQL的安装"></a>MySQL的安装</h3><blockquote>
-<p>可谓是峰回路转，九九八十一难呀！</p>
-</blockquote>
-<blockquote>
+            <h2 id="netbeans的安装"><a href="#netbeans的安装" class="headerlink" title="netbeans的安装"></a>netbeans的安装</h2><p>一路默认即可，但不要一同安装glassfish服务器，将glassfish服务器单独放在C盘根目录下，（PS：netbeans最好不要安装在C盘，我的安装位置：D:\Downloads\netbeans）<br><img src="/2018/09/03/Java-ee/./NetBeans.jpg" alt="netbeans"></p>
+<h2 id="MySQL的安装"><a href="#MySQL的安装" class="headerlink" title="MySQL的安装"></a>MySQL的安装</h2><p>可谓是峰回路转，九九八十一难呀！</p>
 <p>因为之前安装过MySQL的command line版，所以想安装MySQL workbench版，却发现二者或还是不兼容吧。没办法只得卸载——&gt;重装，再卸载——&gt;再重装……无穷尽也。</p>
-</blockquote>
-<h5 id="MySQL之卸载："><a href="#MySQL之卸载：" class="headerlink" title="MySQL之卸载："></a>MySQL之卸载：</h5><ul>
+<h4 id="MySQL之卸载："><a href="#MySQL之卸载：" class="headerlink" title="MySQL之卸载："></a>MySQL之卸载：</h4><ul>
 <li>控制面板卸载</li>
 <li>文件夹卸载</li>
 </ul>
@@ -332,16 +326,16 @@
 </blockquote>
 <blockquote>
 <p>c:\programdata\mysql(programdata文件夹为隐藏文件夹)</p>
+</blockquote>
 <ul>
 <li>注册表删除,cmd运行“regedit”，打开注册表</li>
 </ul>
-</blockquote>
 <blockquote>
 <p>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL文件夹<br>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL的文件夹</p>
 </blockquote>
 <p>这便算卸载干净了，重启便应该可以了！</p>
-<h5 id="MySQL之重装"><a href="#MySQL之重装" class="headerlink" title="MySQL之重装"></a>MySQL之重装</h5><p>双击.msi文件一路默认便是最简单不过的了，不过这回导致文件过大，但因需要workbench的可视化界面，便只好为难地默认安装，若是不需要可视化，可只安装mysql server即可。<br><img src="/2018/09/03/Java-ee/./MySQL workbench.png" alt="mysql workbench"></p>
-<h3 id="Netbeans-and-MySQL之连接"><a href="#Netbeans-and-MySQL之连接" class="headerlink" title="Netbeans and MySQL之连接"></a>Netbeans and MySQL之连接</h3><p><a href="https://netbeans.org/kb/docs/ide/mysql.html?print=yes" target="_blank" rel="noopener">参考此链接</a></p>
+<h4 id="MySQL之重装"><a href="#MySQL之重装" class="headerlink" title="MySQL之重装"></a>MySQL之重装</h4><p>双击.msi文件一路默认便是最简单不过的了，不过这回导致文件过大，但因需要workbench的可视化界面，便只好为难地默认安装，若是不需要可视化，可只安装mysql server即可。<br><img src="/2018/09/03/Java-ee/./MySQL workbench.png" alt="mysql workbench"></p>
+<h2 id="Netbeans-and-MySQL之连接"><a href="#Netbeans-and-MySQL之连接" class="headerlink" title="Netbeans and MySQL之连接"></a>Netbeans and MySQL之连接</h2><p><a href="https://netbeans.org/kb/docs/ide/mysql.html?print=yes" target="_blank" rel="noopener">参考此链接</a></p>
 <ul>
 <li>没有“注册MySQL服务器”选项，故忽略之……</li>
 <li>启动MySQL服务器</li>
