@@ -346,37 +346,17 @@
       
         
           
-            <h2 id="netbeans的安装"><a href="#netbeans的安装" class="headerlink" title="netbeans的安装"></a>netbeans的安装</h2><p>一路默认即可，但不要一同安装glassfish服务器，将glassfish服务器单独放在C盘根目录下，（PS：netbeans最好不要安装在C盘，我的安装位置：D:\Downloads\netbeans）<br><img src="/2018/09/03/Java-ee/./NetBeans.jpg" alt="netbeans"></p>
-<h2 id="MySQL的安装"><a href="#MySQL的安装" class="headerlink" title="MySQL的安装"></a>MySQL的安装</h2><p>可谓是峰回路转，九九八十一难呀！</p>
-<p>因为之前安装过MySQL的command line版，所以想安装MySQL workbench版，却发现二者或还是不兼容吧。没办法只得卸载——&gt;重装，再卸载——&gt;再重装……无穷尽也。</p>
-<h4 id="MySQL之卸载："><a href="#MySQL之卸载：" class="headerlink" title="MySQL之卸载："></a>MySQL之卸载：</h4><ul>
-<li>控制面板卸载</li>
-<li>文件夹卸载</li>
-</ul>
-<blockquote>
-<p>c:\program files\mysql</p>
-</blockquote>
-<blockquote>
-<p>c:\programdata\mysql(programdata文件夹为隐藏文件夹)</p>
-</blockquote>
-<ul>
-<li>注册表删除,cmd运行“regedit”，打开注册表</li>
-</ul>
-<blockquote>
-<p>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL文件夹<br>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL的文件夹</p>
-</blockquote>
-<p>这便算卸载干净了，重启便应该可以了！</p>
-<h4 id="MySQL之重装"><a href="#MySQL之重装" class="headerlink" title="MySQL之重装"></a>MySQL之重装</h4><p>双击.msi文件一路默认便是最简单不过的了，不过这回导致文件过大，但因需要workbench的可视化界面，便只好为难地默认安装，若是不需要可视化，可只安装mysql server即可。<br><img src="/2018/09/03/Java-ee/./MySQL workbench.png" alt="mysql workbench"></p>
-<h2 id="Netbeans-and-MySQL之连接"><a href="#Netbeans-and-MySQL之连接" class="headerlink" title="Netbeans and MySQL之连接"></a>Netbeans and MySQL之连接</h2><p><a href="https://netbeans.org/kb/docs/ide/mysql.html?print=yes" target="_blank" rel="noopener">参考此链接</a></p>
-<ul>
-<li>没有“注册MySQL服务器”选项，故忽略之……</li>
-<li>启动MySQL服务器</li>
-<li>创建并连接到数据库实例</li>
-<li>创建数据库表<br><img src="/2018/09/03/Java-ee/./database01.png" alt="database example 01"></li>
-</ul>
-<p>and so on……please expect my next blog!<br>HAPPY<img src="/2018/09/03/Java-ee/./happy.png" alt="happy"></p>
-
-          
+          netbeans的安装一路默认即可，但不要一同安装glassfish服务器，将glassfish服务器单独放在C盘根目录下，（PS：netbeans最好不要安装在C盘，我的安装位置：D:\Downloads\netbeans）
+MySQL的安装可谓是峰回路转，九九八十一难呀！
+因为之前安装过MySQ
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/03/Java-ee/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -516,15 +496,22 @@
       
         
           
-            <p><img src="/2018/08/31/A-amazing-evening/beauty.jpg" alt="beautiful"></p>
-<blockquote>
-<p>暮霭沉沉楚天阔</p>
-</blockquote>
-<blockquote>
-<p>烟波江上使人愁</p>
-</blockquote>
+          
+
+暮霭沉沉楚天阔
+
+
+烟波江上使人愁
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/31/A-amazing-evening/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -664,44 +651,20 @@
       
         
           
-            <h1 id="welcome-to-my-world"><a href="#welcome-to-my-world" class="headerlink" title="welcome to my world"></a>welcome to my world</h1><p>第一次写博客，不像网上教程般所说搭建博客只需几小时，我几乎断断续续折腾了半年，如今终于有了雏形，个中曲折是难以言说的，只得慢慢记下，以免日后踩坑，也希望大家可以从中吸取些许教训。</p>
-<ul>
-<li>Git的安装 </li>
-<li>node.js的安装</li>
-<li>hexo的安装配置</li>
-<li>Git与GitHub连接</li>
-<li>Git bash命令行部署博客</li>
-</ul>
-<p>参照此教程较为不错：<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">github+hexo搭建博客教程</a></p>
-<h1 id="What’s-more-notice："><a href="#What’s-more-notice：" class="headerlink" title="What’s more,notice："></a>What’s more,notice：</h1><p><strong>坑1：仓库的名字</strong></p>
-<p>仓库的名字必须是：GitHub用户名.github.io，否则报错</p>
-<p><strong>坑2：Git不是GitHub</strong></p>
-<p>Git是指<a href="https://git-scm.com/" target="_blank" rel="noopener">Git bash</a>而不是GitHub desktop或者<a href="https://github.com/" target="_blank" rel="noopener">Github</a></p>
-<p><strong>坑3：Hexo命令</strong></p>
-<p>Hexo命令在Git bash里打或者cmd里面打都可以，但：Git要运行在本地Hexo的根目录下</p>
-<p><strong>坑4：_config.yml配置文件语法严格</strong></p>
-<ul>
-<li><p>“：”后面一定要加上一个空格</p>
-</li>
-<li><p>编码采用UTF-8，否则中文会乱码</p>
-</li>
-</ul>
-<p><strong>坑5：hexo部署命令后，网站没动静</strong></p>
-<ul>
-<li>博客第一次创建，即使deploy成功了，但仍然不会立刻可以访问，还需等15分钟以上</li>
-<li>再试着hexo deploy一次</li>
-<li>到yourname.github.io项目的github主页，点击settings，拉到github pages，有一个launch automatic page generator，点击后，再点击continue to layouts，最后点击publish page，马上就可以看到yourname.github.io可以访问了，但样式是刚刚默认的，和本地不一样</li>
-</ul>
-<h1 id="Last-but-not-least"><a href="#Last-but-not-least" class="headerlink" title="Last but not least"></a>Last but not least</h1><ul>
-<li><a href="https://www.jianshu.com/p/469e985288b3" target="_blank" rel="noopener">更换主题themes</a></li>
-</ul>
-<ul>
-<li>写博客，Markdown软件，采用在线的<a href="https://www.madoko.net/" target="_blank" rel="noopener">Madoko</a>配合editplus即可</li>
-</ul>
-<p>and so on！</p>
-<p><img src="/2018/08/29/welcome/thanks.jpg" alt="thanks"></p>
+          welcome to my world第一次写博客，不像网上教程般所说搭建博客只需几小时，我几乎断断续续折腾了半年，如今终于有了雏形，个中曲折是难以言说的，只得慢慢记下，以免日后踩坑，也希望大家可以从中吸取些许教训。
 
-          
+Git的安装 
+node.js的安装
+hexo的安装配置
+Git与GitHub连
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/29/welcome/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
