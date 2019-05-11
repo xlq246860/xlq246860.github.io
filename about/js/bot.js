@@ -32,9 +32,9 @@ function action()
 
 				for (var i=0; i < array.length; i++)
 				{
-					// ��ʽ   console.log(array[i]);
+					// 启发式   console.log(array[i]);
 					var result = array[i];
-					$(".b-body").append("<div class="rotWord"><span></span> <p id="member">" + result + "</p></div>");
+					$(".b-body").append("<div class='rotWord'><span></span> <p id='member'>" + result + "</p></div>");
 					$(".b-body").scrollTop(10000000);
 				}
 			}
@@ -77,4 +77,37 @@ function ajax(mJson)
 		{
 			dataStr+=key+'='+data[key];
 	
-			if (++i<len) {="" datastr+="&" ;="" }="" if(type.tolowercase()="='get')" url+="?" +datastr;="" console.log(url);="" var="" xhr="new" xmlhttprequest();="" xhr.open(type,url,true);="" xhr.setrequestheader('content-type'="" ,="" 'application="" x-www-form-urlencoded');="" xhr.send(null);="" xhr.onreadystatechange="function()" if(xhr.readystate="=4)" if(xhr.status="">=200&&xhr.status</len)>
+			if (++i<len)
+			{
+				dataStr+='&';
+			}
+		}
+		
+		if(type.toLowerCase()=='get')
+		{
+			url+='?'+dataStr;
+		}
+	}
+	
+	console.log(url);
+	
+	var xhr=new XMLHttpRequest();
+	xhr.open(type,url,true);
+	xhr.setRequestHeader('content-type' , 'application/x-www-form-urlencoded');
+	xhr.send(null);
+
+	xhr.onreadystatechange=function()
+	{
+		if(xhr.readyState==4)
+		{
+			if(xhr.status>=200&&xhr.status<300)
+			{
+				success&&success(xhr.responseText);
+			}
+			else
+			{
+				error&&error(xhr.status);
+			}
+		}
+	}
+}		
