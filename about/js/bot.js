@@ -9,7 +9,7 @@ function action()
 		return;
 	}
 
-	$(".b-body").append("<div class="mWord"><span></span><p>" + text.val() + "</p></div>");
+	$(".b-body").append("<div class='mWord'><span></span><p>" + text.val() + "</p></div>");
 	$(".b-body").scrollTop(10000000);
 	
 	var args= {
